@@ -13,3 +13,6 @@ hs_err_pid*
 /j2a-java/nbproject/private/
 /j2a-java/build/
 /j2a-java/dist/
+/j2a/nbproject/private/
+/j2a/build/
+/j2a/dist/
