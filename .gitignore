@@ -16,3 +16,40 @@ hs_err_pid*
 /j2a/nbproject/private/
 /j2a/build/
 /j2a/dist/
+
+#build
+*.apk
+*.ap_
+*.aar
+*.dex
+
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Gradle files
+.gradle/
+/*/.gradle/
+build/
+/*/build/
+
+local.properties
+/*/local.properties
+
+proguard/
+/*/proguard/
+
+# Log Files
+*.log
+
+# idea
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
