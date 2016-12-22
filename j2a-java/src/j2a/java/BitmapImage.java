@@ -12,18 +12,12 @@ import javax.imageio.ImageIO;
  */
 public class BitmapImage implements j2a.BitmapImage {
 
-    public static int getTYPE_4BYTE_ABGR() {
-        return BufferedImage.TYPE_4BYTE_ABGR;
+  
+    public static j2a.BitmapImage newBitmapImage(int width, int height) {
+        return new BitmapImage(width, height);
     }
 
-    public static j2a.BitmapImage newBitmapImage(int width, int height, int type) {
-        return new BitmapImage(width, height, type);
-    }
-
-    public static int getTYPE_INT_ARGB() {
-        return BufferedImage.TYPE_INT_ARGB;
-    }
-
+  
     public static j2a.BitmapImage read(InputStream resourceAsStream) throws IOException {
         BufferedImage bf = ImageIO.read(resourceAsStream);
         return new BitmapImage(bf);
@@ -31,8 +25,8 @@ public class BitmapImage implements j2a.BitmapImage {
 
     private final BufferedImage back;
 
-    private BitmapImage(int width, int height, int type) {
-        back = new BufferedImage(width, height, type);
+    private BitmapImage(int width, int height) {
+        back = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
     }
     private BitmapImage(BufferedImage bf) {
         back = bf;

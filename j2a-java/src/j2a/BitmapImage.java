@@ -9,16 +9,8 @@ import java.io.InputStream;
  */
 public interface BitmapImage {
 
-    public static BitmapImage newBitmapImage(int width, int height, int type) {
-        return j2a.java.BitmapImage.newBitmapImage(width, height, type);
-    }
-
-    public static int getTYPE_4BYTE_ABGR() {
-        return j2a.java.BitmapImage.getTYPE_4BYTE_ABGR();
-    }
-
-    public static int getTYPE_INT_ARGB(){
-        return j2a.java.BitmapImage.getTYPE_INT_ARGB();
+    public static BitmapImage newBitmapImage(int width, int height) {
+        return j2a.java.BitmapImage.newBitmapImage(width, height);
     }
 
     public static BitmapImage read(InputStream resourceAsStream) throws IOException{

@@ -9,15 +9,7 @@ import java.io.InputStream;
  */
 public interface BitmapImage {
 
-    public static BitmapImage newBitmapImage(int width, int height, int type) {
-        throw new UnsupportedOperationException("Please use java or android implementation");
-    }
-
-    public static int getTYPE_4BYTE_ABGR() {
-        throw new UnsupportedOperationException("Please use java or android implementation");
-    }
-
-    public static int getTYPE_INT_ARGB(){
+    public static BitmapImage newBitmapImage(int width, int height) {
         throw new UnsupportedOperationException("Please use java or android implementation");
     }
 
