@@ -5,31 +5,30 @@
  */
 package j2a.android;
 
+import android.graphics.Typeface;
+
 /**
  *
  * @author jvanek
  */
 public class Font implements j2a.Font {
 
-    public static int getBOLD() {
-        //  return java.awt.Font.BOLD;
-        throw new UnsupportedOperationException("Please use java or android implementation");// }
-    }
 
-    //java.awt.Font back;
 
-    //public  Font(java.awt.Font back) { this.back = back; }
+    Typeface back;
+
+    public  Font(Typeface back) { this.back = back; }
 
     @Override
-    public j2a.Font deriveFont(int mod) {
-      //  back.deriveFont(mod);
-      //  return new Font(back);
-        throw new UnsupportedOperationException("Please use java or android implementation");    }
+    public j2a.Font getBold() {
+        return new Font(Typeface.DEFAULT_BOLD);
+    }
+
 
     @Override
     public Object getOriginal() {
-        //return back;
-        throw new UnsupportedOperationException("Please use java or android implementation");
+        return back;
+
     }
 
 }

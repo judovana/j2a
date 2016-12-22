@@ -3,6 +3,7 @@ package j2a.android;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 
 import j2a.BitmapImage;
 import j2a.Color;
@@ -31,6 +32,7 @@ public class GraphicsCanvas implements j2a.GraphicsCanvas {
     @Override
     public void fillOval(int i, int i0, int i1, int i2) {
         currentPaint.setStyle(Paint.Style.FILL);
+        //cheat! circle only! draw arc should be used
         back.drawCircle(i, i0, (Math.abs(i1)+Math.abs(i2))/2, currentPaint);
     }
 
@@ -47,8 +49,7 @@ public class GraphicsCanvas implements j2a.GraphicsCanvas {
 
     @Override
     public FontMetrics getFontMetrics() {
-        //return new j2a.java.FontMetrics(back.getFontMetrics());
-        throw new UnsupportedOperationException("Please use java or android implementation");
+        return new j2a.android.FontMetrics(new Paint(currentPaint));
     }
 
     @Override
@@ -71,14 +72,13 @@ public class GraphicsCanvas implements j2a.GraphicsCanvas {
 
     @Override
     public Font getFont() {
-        //return new j2a.java.Font(back.getFont());
-        throw new UnsupportedOperationException("Please use java or android implementation");
+        return new j2a.android.Font(currentPaint.getTypeface());
     }
 
     @Override
     public void setFont(Font f) {
-        //back.setFont(null);
-        throw new UnsupportedOperationException("Please use java or android implementation");
+        currentPaint.setTypeface((Typeface) f.getOriginal());
+
     }
 
 }

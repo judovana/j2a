@@ -1,8 +1,11 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="AppTheme">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="android:Theme.DeviceDefault">
+
+        <!-- <style name="AppTheme" parent="android:Theme.DeviceDefault.Light.NoActionBar">
+         use for game!
+         -->
     </style>
 
 </resources>
