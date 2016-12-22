@@ -52,13 +52,6 @@ public class Factory {
 
     }
 
-    public static class Font {
-
-        public static int getBOLD() {
-            return j2a.java.Font.getBOLD();
-        }
-    }
-
     public static class BitmapImage {
 
         public static j2a.BitmapImage newBitmapImage(int width, int height) {

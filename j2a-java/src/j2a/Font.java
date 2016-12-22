@@ -6,7 +6,7 @@ package j2a;
  */
 public interface Font {
 
-    public Font deriveFont(int mod);
+    public Font getBold();
     
     public Object getOriginal(); 
     

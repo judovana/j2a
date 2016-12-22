@@ -51,14 +51,7 @@ public class Factory {
         }
     }
 
-    public static class Font {
-
-        public static int getBOLD() {
-            throw new UnsupportedOperationException("Please use java or android implementation");
-        }
-    }
-
-    public static class BitmapImage {
+      public static class BitmapImage {
 
         public static j2a.BitmapImage newBitmapImage(int width, int height) {
             throw new UnsupportedOperationException("Please use java or android implementation");

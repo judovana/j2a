@@ -11,10 +11,6 @@ package j2a.java;
  */
 public class Font implements j2a.Font {
 
-    public static int getBOLD() {
-        return java.awt.Font.BOLD;
-    }
-
     java.awt.Font back;
 
     public  Font(java.awt.Font back) {
@@ -22,9 +18,8 @@ public class Font implements j2a.Font {
     }
 
     @Override
-    public j2a.Font deriveFont(int mod) {
-        back.deriveFont(mod);
-        return new Font(back);
+    public j2a.Font getBold() {
+        return new j2a.java.Font(back.deriveFont(java.awt.Font.BOLD));
     }
 
     @Override
