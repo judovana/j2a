@@ -59,13 +59,13 @@ public class Factory {
         }
     }
 
-    public static class Image {
+    public static class BitmapImage {
 
-        public static BitmapImage newBitmapImage(int width, int height) {
+        public static j2a.BitmapImage newBitmapImage(int width, int height) {
             return j2a.java.BitmapImage.newBitmapImage(width, height);
         }
 
-        public static BitmapImage read(InputStream resourceAsStream) throws IOException {
+        public static j2a.BitmapImage read(InputStream resourceAsStream) throws IOException {
             return j2a.java.BitmapImage.read(resourceAsStream);
         }
     }

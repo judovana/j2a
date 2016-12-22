@@ -11,42 +11,42 @@ public class Factory {
 
     public static class Color {
 
-        public static Color getBLUE() {
+        public static j2a.Color getBLUE() {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static Color getYELLOW() {
+        public static j2a.Color getYELLOW() {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static Color getBLACK() {
+        public static j2a.Color getBLACK() {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static Color getRED() {
+        public static j2a.Color getRED() {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static Color getCYAN() {
+        public static j2a.Color getCYAN() {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static Color newColor(int r, int g, int b, int a) {
+        public static j2a.Color newColor(int r, int g, int b, int a) {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static Color newColor(int r, int g, int b) {
+        public static j2a.Color newColor(int r, int g, int b) {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static Color getWHITE() {
+        public static j2a.Color getWHITE() {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
     }
 
     public static class Point {
 
-        public static Point newPoint(int x, int y) {
+        public static j2a.Point newPoint(int x, int y) {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
     }
@@ -58,13 +58,13 @@ public class Factory {
         }
     }
 
-    public static class Image {
+    public static class BitmapImage {
 
-        public static BitmapImage newBitmapImage(int width, int height) {
+        public static j2a.BitmapImage newBitmapImage(int width, int height) {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
 
-        public static BitmapImage read(InputStream resourceAsStream) throws IOException {
+        public static j2a.BitmapImage read(InputStream resourceAsStream) throws IOException {
             throw new UnsupportedOperationException("Please use java or android implementation");
         }
     }
