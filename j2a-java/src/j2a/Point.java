@@ -6,10 +6,6 @@ package j2a;
  */
 public interface Point {
 
-    public static Point newPoint(int x, int y) {
-        return j2a.java.Point.newPoint(x, y);
-    }
-
     public int getX();
 
     public int getY();

@@ -6,10 +6,6 @@ package j2a;
  */
 public interface Point {
 
-    public static Point newPoint(int x, int y) {
-        throw new UnsupportedOperationException("Please use java or android implementation");
-    }
-
     public int getX();
 
     public int getY();
