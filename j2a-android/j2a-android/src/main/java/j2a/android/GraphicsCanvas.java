@@ -44,7 +44,7 @@ public class GraphicsCanvas implements j2a.GraphicsCanvas {
     @Override
     public void fillRect(int x, int y, int w, int h) {
         currentPaint.setStyle(Paint.Style.FILL);
-        back.drawRect(x, y, x+w, x+h, currentPaint);
+        back.drawRect(x, y, x+w, y+h, currentPaint);
     }
 
     @Override
@@ -55,7 +55,7 @@ public class GraphicsCanvas implements j2a.GraphicsCanvas {
     @Override
     public void drawRect(int x, int y, int w, int h) {
         currentPaint.setStyle(Paint.Style.STROKE);
-        back.drawRect(x, y, x+w, x+h, currentPaint);
+        back.drawRect(x, y, x+w, y+h, currentPaint);
     }
 
     @Override
