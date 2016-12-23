@@ -33,7 +33,8 @@ public class GraphicsCanvas implements j2a.GraphicsCanvas {
     public void fillOval(int i, int i0, int i1, int i2) {
         currentPaint.setStyle(Paint.Style.FILL);
         //cheat! circle only! draw arc should be used
-        back.drawCircle(i, i0, (Math.abs(i1)+Math.abs(i2))/2, currentPaint);
+        int radius = (Math.abs(i1)+Math.abs(i2))/2;
+        back.drawCircle(i+radius/2, i0+radius/2, radius/2, currentPaint);
     }
 
     @Override
@@ -61,7 +62,8 @@ public class GraphicsCanvas implements j2a.GraphicsCanvas {
     @Override
     public void drawString(String string, int x, int y) {
         currentPaint.setStyle(Paint.Style.STROKE);
-        back.drawText(string, x, y, currentPaint);
+        int t = (int)(currentPaint.getFontMetrics().top*4.0/5.0);
+        back.drawText(string, x, y-t, currentPaint);
     }
 
     @Override
