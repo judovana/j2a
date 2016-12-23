@@ -28,9 +28,9 @@ dependencies {
     //please replace by any jar containing any image, only this image is used by testing app.
     //aars and apks ahve different understanding of class path (or I dont know how to do thi sproperly in aar/apk
     compile fileTree(include: ['*.jar'], dir: '../../../FlashBalknaModel/dist')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
     testCompile 'junit:junit:4.12'
     compile project(':j2a-android')
 }
