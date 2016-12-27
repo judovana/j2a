@@ -53,3 +53,5 @@ proguard/
 .DS_Store
 /build
 /captures
+/TestResource/nbproject/private/
+/TestResource/dist/

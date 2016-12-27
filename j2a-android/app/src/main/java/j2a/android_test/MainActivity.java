@@ -17,8 +17,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         ImageView iw= (ImageView) findViewById(R.id.imageView) ;
         try {
-            BitmapImage bm = j2a.Factory.BitmapImage.read(this.getClass().getResourceAsStream("/org/fbb/balkna/data/imgs/app/title.png"));
-            BitmapImage bm2 = j2a.Factory.BitmapImage.read(this.getClass().getResourceAsStream("/org/fbb/balkna/data/imgs/app/title.png"));
+            BitmapImage bm = j2a.Factory.BitmapImage.read(this.getClass().getResourceAsStream("/testresource/img.jpg"));
+            BitmapImage bm2 = j2a.Factory.BitmapImage.read(this.getClass().getResourceAsStream("/testresource/img.jpg"));
             GraphicsCanvas gc = bm.createGraphics();
             gc.setColor(j2a.Factory.Color.getBLUE());
             gc.drawLine(0, 0, bm.getWidth(), bm.getHeight());
